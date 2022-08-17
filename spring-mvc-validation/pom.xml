@@ -11,11 +11,11 @@
     </parent>
 
     <groupId>org.susamlu.springmvc</groupId>
-    <artifactId>spring-mvc-helloworld</artifactId>
+    <artifactId>spring-mvc-validation</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>spring-mvc-helloworld</name>
+    <name>spring-mvc-validation</name>
     <description>Demo project for Spring MVC</description>
 
     <dependencies>
@@ -23,6 +23,24 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- validation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
         </dependency>
 
         <!-- test -->
