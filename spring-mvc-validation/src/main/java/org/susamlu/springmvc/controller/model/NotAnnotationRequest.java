@@ -13,7 +13,7 @@ import java.util.Map;
  * @date 2022/08/17
  */
 @Data
-public class InvertAnnotationRequest {
+public class NotAnnotationRequest {
 
     @NotNull
     private Object notNullObject;
