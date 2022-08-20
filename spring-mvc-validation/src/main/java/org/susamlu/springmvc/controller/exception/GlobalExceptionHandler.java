@@ -28,7 +28,8 @@ public class GlobalExceptionHandler {
             MethodArgumentNotValidException exception) {
         List<String> errorMessages = exception.getFieldErrors()
                 .stream()
-                .map(fieldError -> String.format("%s %s", fieldError.getField(), fieldError.getDefaultMessage()))
+                .map(fieldError -> String.format("%s %s", fieldError.getField(),
+                        fieldError.getDefaultMessage()))
                 .sorted()
                 .collect(Collectors.toList());
 

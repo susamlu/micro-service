@@ -10,8 +10,6 @@ import org.susamlu.springmvc.controller.model.group.OrganizationRequest;
 import org.susamlu.springmvc.controller.model.group.UpdateGroup;
 import org.susamlu.springmvc.controller.model.nest.CompanyRequest;
 
-import javax.validation.groups.Default;
-
 /**
  * @author Sam Lu
  * @date 2022/08/19
@@ -21,13 +19,13 @@ public class GroupValidController {
 
     @PostMapping("/api/organizations")
     public OrganizationRequest createOrganization(
-            @RequestBody @Validated({CreateGroup.class, Default.class}) OrganizationRequest organizationRequest) {
+            @RequestBody @Validated(CreateGroup.class) OrganizationRequest organizationRequest) {
         return organizationRequest;
     }
 
     @PutMapping("/api/organizations")
     public OrganizationRequest updateOrganization(
-            @RequestBody @Validated({UpdateGroup.class, Default.class}) OrganizationRequest organizationRequest) {
+            @RequestBody @Validated(UpdateGroup.class) OrganizationRequest organizationRequest) {
         return organizationRequest;
     }
 

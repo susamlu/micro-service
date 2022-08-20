@@ -14,7 +14,7 @@ import org.susamlu.springmvc.controller.model.RangeAnnotationRequest;
 public class RangeAnnotationController {
 
     @PostMapping("/api/range")
-    public RangeAnnotationRequest testInvertAnnotation(
+    public RangeAnnotationRequest testRangeAnnotation(
             @RequestBody @Validated RangeAnnotationRequest rangeAnnotationRequest) {
         return rangeAnnotationRequest;
     }
