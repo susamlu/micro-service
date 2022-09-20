@@ -1,3 +1,3 @@
-# spring-mvc
+# spring-web
 
-Spring MVC
+Spring Web

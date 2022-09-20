@@ -3,19 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.susamlu.springmvc</groupId>
-    <artifactId>spring-mvc</artifactId>
+    <groupId>org.susamlu.springweb</groupId>
+    <artifactId>spring-web</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>spring-mvc</name>
-    <description>Demo project for Spring MVC</description>
+    <name>spring-web</name>
+    <description>Demo project for Spring Web</description>
 
     <modules>
-        <module>spring-mvc-helloworld</module>
-        <module>spring-mvc-bean</module>
-        <module>spring-mvc-validation</module>
-        <module>spring-mvc-http-message-converter</module>
+        <module>spring-web-helloworld</module>
+        <module>spring-web-bean</module>
+        <module>spring-web-validation</module>
+        <module>spring-web-http-message-converter</module>
     </modules>
 
 </project>
