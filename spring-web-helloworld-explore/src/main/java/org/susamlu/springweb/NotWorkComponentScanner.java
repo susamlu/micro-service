@@ -7,5 +7,5 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2022/09/23
  */
 @ComponentScan
-public class DisabledComponentScanner {
+public class NotWorkComponentScanner {
 }

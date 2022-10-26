@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2022/09/28
  */
 @Configuration
-public class ConfigTest {
+public class TestConfig {
 
     @Bean
     Object getObject() {
