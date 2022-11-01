@@ -2,17 +2,18 @@ package org.susamlu.springweb.explore.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author Sam Lu
  * @date 2022/09/28
  */
 @Configuration
-public class TestConfig {
+public class HelloWorldConfig {
 
     @Bean
-    Object getObject() {
-        return new Object();
+    RestTemplate getRestTemplate() {
+        return new RestTemplate();
     }
 
 }

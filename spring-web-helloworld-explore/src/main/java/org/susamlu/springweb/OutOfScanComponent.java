@@ -7,5 +7,5 @@ import org.springframework.stereotype.Component;
  * @date 2022/09/23
  */
 @Component
-public class OutOfScanBean {
+public class OutOfScanComponent {
 }

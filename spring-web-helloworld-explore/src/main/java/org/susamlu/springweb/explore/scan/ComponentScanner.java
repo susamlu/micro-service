@@ -7,5 +7,5 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2022/09/29
  */
 @ComponentScan
-public class Scanner {
+public class ComponentScanner {
 }
