@@ -1,12 +1,9 @@
-package org.susamlu.springweb.explore.sub.component;
-
-import org.springframework.stereotype.Component;
+package org.susamlu.springweb.config.sub.component;
 
 /**
  * @author Sam Lu
  * @date 2022/09/23
  */
-@Component
 public class SubComponent {
 
     public String getName() {
