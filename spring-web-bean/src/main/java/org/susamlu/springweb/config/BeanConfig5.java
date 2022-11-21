@@ -7,17 +7,17 @@ import org.susamlu.springweb.component.MyRestTemplate;
 
 /**
  * @author Sam Lu
- * @date 2022/08/30
+ * @date 2022/11/19
  */
 @Configuration
-public class BeanConfig {
+public class BeanConfig5 {
 
-    @Bean
+    @Bean("restTemplateC")
     public MyRestTemplate myRestTemplate() {
         return new MyRestTemplate();
     }
 
-    @Bean
+    @Bean("restTemplateC")
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
