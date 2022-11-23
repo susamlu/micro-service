@@ -20,11 +20,6 @@ import java.util.Arrays;
 @SpringBootApplication
 public class BeanApplication {
 
-    @Autowired
-    private BeanConfig beanConfig;
-    @Autowired
-    private BeanConfig3 beanConfig3;
-
     public static void main(String[] args) {
         SpringApplication.run(BeanApplication.class, args);
     }
@@ -41,16 +36,6 @@ public class BeanApplication {
         String name = "restTemplateB";
         Object obj = event.getApplicationContext().getBean(name);
         log.info("name: {}, class {}, instance: {}", name, obj.getClass(), obj);
-    }
-
-    @EventListener
-    private void testGetBean(ApplicationReadyEvent event) {
-        RestTemplate restTemplate1 = beanConfig.restTemplate();
-        RestTemplate restTemplate2 = beanConfig.restTemplate();
-        RestTemplate restTemplate3 = beanConfig3.restTemplate2();
-        RestTemplate restTemplate4 = beanConfig3.restTemplate2();
-        log.info("restTemplate1 equals restTemplate2: {}", restTemplate1.equals(restTemplate2));
-        log.info("restTemplate3 equals restTemplate4: {}", restTemplate3.equals(restTemplate4));
     }
 
 }
