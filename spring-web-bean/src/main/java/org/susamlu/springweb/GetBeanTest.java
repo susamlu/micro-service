@@ -21,7 +21,7 @@ public class GetBeanTest {
     private BeanConfig3 beanConfig3;
 
     @EventListener
-    private void testGetBean(ApplicationReadyEvent event) {
+    private void getBeans(ApplicationReadyEvent event) {
         RestTemplate restTemplate1 = beanConfig.restTemplate();
         RestTemplate restTemplate2 = beanConfig.restTemplate();
         RestTemplate restTemplate3 = beanConfig3.restTemplate2();
