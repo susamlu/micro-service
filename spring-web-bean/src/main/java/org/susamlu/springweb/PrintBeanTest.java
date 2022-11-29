@@ -13,10 +13,10 @@ import java.util.Arrays;
  */
 @Slf4j
 @Component
-public class PrintBeanNameTest {
+public class PrintBeanTest {
 
     @EventListener
-    public void printBeanNames(ApplicationReadyEvent event) {
+    public void printBeans(ApplicationReadyEvent event) {
         Arrays.stream(event.getApplicationContext().getBeanDefinitionNames())
                 .sorted()
                 .forEach(name -> {

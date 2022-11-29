@@ -20,7 +20,7 @@ public class BeanApplication implements ApplicationContextAware {
 
     public static void main(String[] args) {
         SpringApplication.run(BeanApplication.class, args);
-        ((ConfigurableApplicationContext) applicationContext).close();
+        // ((ConfigurableApplicationContext) applicationContext).close();
     }
 
     @Override
