@@ -12,7 +12,7 @@ public class OrderBean2 extends BaseOrderBean implements Ordered {
 
     @Override
     public int getOrder() {
-        return 90;
+        return 2;
     }
 
 }
