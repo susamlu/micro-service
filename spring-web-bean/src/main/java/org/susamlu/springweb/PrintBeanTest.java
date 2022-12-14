@@ -51,6 +51,18 @@ public class PrintBeanTest {
         String name7 = "injectionComponent9";
         Object obj7 = event.getApplicationContext().getBean(name7);
         log.info("name: {}, class {}, instance: {}", name7, obj7.getClass(), obj7);
+
+        String name8 = "injectionComponent10";
+        Object obj8 = event.getApplicationContext().getBean(name8);
+        log.info("name: {}, class {}, instance: {}", name8, obj8.getClass(), obj8);
+
+        String name9 = "injectionComponent11";
+        Object obj9 = event.getApplicationContext().getBean(name9);
+        log.info("name: {}, class {}, instance: {}", name9, obj9.getClass(), obj9);
+
+        String name10 = "injectionComponent12";
+        Object obj10 = event.getApplicationContext().getBean(name10);
+        log.info("name: {}, class {}, instance: {}", name10, obj10.getClass(), obj10);
     }
 
 }
