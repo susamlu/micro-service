@@ -2,7 +2,6 @@ package org.susamlu.springweb;
 
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.susamlu.springweb.component.MyBean;
 import org.susamlu.springweb.component.MyBean2;
 
 /**

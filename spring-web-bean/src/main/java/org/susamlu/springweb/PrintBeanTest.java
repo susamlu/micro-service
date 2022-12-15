@@ -63,6 +63,10 @@ public class PrintBeanTest {
         String name10 = "injectionComponent12";
         Object obj10 = event.getApplicationContext().getBean(name10);
         log.info("name: {}, class {}, instance: {}", name10, obj10.getClass(), obj10);
+
+        String name11 = "injectionComponent13";
+        Object obj11 = event.getApplicationContext().getBean(name11);
+        log.info("name: {}, class {}, instance: {}", name11, obj11.getClass(), obj11);
     }
 
 }

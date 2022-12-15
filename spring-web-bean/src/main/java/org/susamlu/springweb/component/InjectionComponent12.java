@@ -13,6 +13,6 @@ public class InjectionComponent12 {
 
     @Qualifier
     @Autowired
-    private MyBean3 myBean;
+    private QualifierBean qualifierBean;
 
 }

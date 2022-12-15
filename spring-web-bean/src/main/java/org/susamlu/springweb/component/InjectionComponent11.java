@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class InjectionComponent11 {
 
-    @Qualifier("qualifierTestBean1")
+    @Qualifier("qualifierBean1")
     @Autowired
-    private MyBean3 myBean;
+    private QualifierBean qualifierBean;
 
 }

@@ -2,8 +2,7 @@ package org.susamlu.springweb.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.susamlu.springweb.component.MyBean3;
+import org.susamlu.springweb.component.QualifierBean;
 
 /**
  * @author Sam Lu
@@ -13,13 +12,13 @@ import org.susamlu.springweb.component.MyBean3;
 public class BeanConfig18 {
 
     @Bean
-    public MyBean3 qualifierTestBean1() {
-        return new MyBean3("qualifierTestBean1");
+    public QualifierBean qualifierBean1() {
+        return new QualifierBean("qualifierBean1");
     }
 
     @Bean
-    public MyBean3 qualifierTestBean2() {
-        return new MyBean3("qualifierTestBean2");
+    public QualifierBean qualifierBean2() {
+        return new QualifierBean("qualifierBean2");
     }
 
 }

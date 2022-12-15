@@ -3,7 +3,7 @@ package org.susamlu.springweb.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.susamlu.springweb.component.MyBean3;
+import org.susamlu.springweb.component.PrimaryBean;
 
 /**
  * @author Sam Lu
@@ -14,13 +14,13 @@ public class BeanConfig17 {
 
     @Primary
     @Bean
-    public MyBean3 primaryTestBean1() {
-        return new MyBean3("primaryTestBean1");
+    public PrimaryBean primaryBean1() {
+        return new PrimaryBean("primaryBean1");
     }
 
     @Bean
-    public MyBean3 primaryTestBean2() {
-        return new MyBean3("primaryTestBean2");
+    public PrimaryBean primaryBean2() {
+        return new PrimaryBean("primaryBean2");
     }
 
 }

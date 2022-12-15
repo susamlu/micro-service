@@ -1,16 +1,17 @@
 package org.susamlu.springweb.component;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 /**
  * @author Sam Lu
  * @date 2022/12/14
  */
 @Component
-public class InjectionComponent10 {
+public class InjectionComponent13 {
 
-    @Autowired
-    private PrimaryBean primaryBean;
+    @Resource
+    private ResourceBean resourceBean1;
 
 }
