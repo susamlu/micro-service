@@ -15,9 +15,10 @@
         <module>spring-web-helloworld</module>
         <module>spring-web-helloworld-explore</module>
         <module>spring-web-helloworld-explore/sub</module>
+        <module>spring-web-bean-declaration</module>
+        <module>spring-web-bean-injection</module>
         <module>spring-web-config</module>
         <module>spring-web-config/sub</module>
-        <module>spring-web-bean</module>
         <module>spring-web-validation</module>
         <module>spring-web-http-message-converter</module>
     </modules>
