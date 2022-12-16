@@ -9,7 +9,7 @@ import org.susamlu.springweb.component.ResourceBean;
  * @date 2022/12/15
  */
 @Configuration
-public class BeanConfig20 {
+public class BeanConfig5 {
 
     @Bean
     public ResourceBean resourceBean1() {

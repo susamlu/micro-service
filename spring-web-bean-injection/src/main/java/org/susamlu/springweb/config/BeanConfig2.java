@@ -10,7 +10,7 @@ import org.susamlu.springweb.component.PrimaryBean;
  * @date 2022/12/14
  */
 @Configuration
-public class BeanConfig17 {
+public class BeanConfig2 {
 
     @Primary
     @Bean

@@ -1,5 +1,6 @@
 package org.susamlu.springweb.config;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.susamlu.springweb.component.QualifierBean;
@@ -9,16 +10,17 @@ import org.susamlu.springweb.component.QualifierBean;
  * @date 2022/12/14
  */
 @Configuration
-public class BeanConfig18 {
+public class BeanConfig4 {
 
+    @Qualifier
     @Bean
-    public QualifierBean qualifierBean1() {
-        return new QualifierBean("qualifierBean1");
+    public QualifierBean qualifierBean3() {
+        return new QualifierBean("qualifierBean3");
     }
 
     @Bean
-    public QualifierBean qualifierBean2() {
-        return new QualifierBean("qualifierBean2");
+    public QualifierBean qualifierBean4() {
+        return new QualifierBean("qualifierBean4");
     }
 
 }

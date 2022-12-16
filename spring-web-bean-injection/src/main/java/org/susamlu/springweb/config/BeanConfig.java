@@ -10,7 +10,7 @@ import org.susamlu.springweb.component.OrderBean3;
  * @date 2022/12/12
  */
 @Configuration
-public class BeanConfig16 {
+public class BeanConfig {
 
     @Bean
     @Order(1)
