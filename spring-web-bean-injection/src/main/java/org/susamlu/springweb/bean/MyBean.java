@@ -1,4 +1,4 @@
-package org.susamlu.springweb.component;
+package org.susamlu.springweb.bean;
 
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,7 @@
 package org.susamlu.springweb.component;
 
 import org.springframework.stereotype.Component;
+import org.susamlu.springweb.bean.MyBean;
 
 import javax.inject.Inject;
 

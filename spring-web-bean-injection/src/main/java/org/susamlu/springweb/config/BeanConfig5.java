@@ -2,7 +2,7 @@ package org.susamlu.springweb.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.susamlu.springweb.component.ResourceBean;
+import org.susamlu.springweb.bean.ResourceBean;
 
 /**
  * @author Sam Lu

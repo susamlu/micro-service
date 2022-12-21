@@ -3,7 +3,7 @@ package org.susamlu.springweb.config;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.susamlu.springweb.component.QualifierBean;
+import org.susamlu.springweb.bean.QualifierBean;
 
 /**
  * @author Sam Lu

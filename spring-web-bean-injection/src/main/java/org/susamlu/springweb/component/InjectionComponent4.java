@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
+import org.susamlu.springweb.bean.MyBean;
 
 /**
  * @author Sam Lu

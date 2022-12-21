@@ -3,7 +3,7 @@ package org.susamlu.springweb.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.susamlu.springweb.component.PrimaryBean;
+import org.susamlu.springweb.bean.PrimaryBean;
 
 /**
  * @author Sam Lu

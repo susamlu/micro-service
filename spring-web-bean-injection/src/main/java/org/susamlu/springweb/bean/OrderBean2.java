@@ -1,7 +1,8 @@
-package org.susamlu.springweb.component;
+package org.susamlu.springweb.bean;
 
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
+import org.susamlu.springweb.bean.BaseOrderBean;
 
 /**
  * @author Sam Lu

@@ -3,7 +3,7 @@ package org.susamlu.springweb.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
-import org.susamlu.springweb.component.OrderBean3;
+import org.susamlu.springweb.bean.OrderBean3;
 
 /**
  * @author Sam Lu
