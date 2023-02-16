@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.annotation.ApplicationScope;
+import org.springframework.web.context.annotation.RequestScope;
+import org.springframework.web.context.annotation.SessionScope;
 import org.susamlu.springweb.bean.MyBean;
 
 /**
@@ -13,7 +16,7 @@ import org.susamlu.springweb.bean.MyBean;
  * @date 2022/12/21
  */
 @Configuration
-public class BeanConfig {
+public class ScopeBeanConfig {
 
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
@@ -42,6 +45,24 @@ public class BeanConfig {
     @Bean
     @Scope(value = WebApplicationContext.SCOPE_APPLICATION, proxyMode = ScopedProxyMode.TARGET_CLASS)
     public MyBean applicationBean() {
+        return new MyBean();
+    }
+
+    @Bean
+    @RequestScope
+    public MyBean requestBean2() {
+        return new MyBean();
+    }
+
+    @Bean
+    @SessionScope
+    public MyBean sessionBean2() {
+        return new MyBean();
+    }
+
+    @Bean
+    @ApplicationScope
+    public MyBean applicationBean2() {
         return new MyBean();
     }
 
