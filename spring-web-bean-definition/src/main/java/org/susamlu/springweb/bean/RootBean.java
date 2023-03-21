@@ -14,6 +14,7 @@ public class RootBean implements SuperBean {
         this.field = field;
     }
 
+    @Autowired
     private ChildBean childBean;
 
     public void setChildBean(ChildBean childBean) {
