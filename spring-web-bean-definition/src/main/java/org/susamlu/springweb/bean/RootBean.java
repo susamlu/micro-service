@@ -6,7 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author lxc
  * @date 2023/03/17
  */
-public class RootBean implements SuperBean {
+public class RootBean {
+
+    public RootBean() {
+        System.out.println("init RootBean");
+    }
 
     private String field;
 
@@ -21,7 +25,6 @@ public class RootBean implements SuperBean {
         this.childBean = childBean;
     }
 
-    @Override
     public void doSomething() {
         System.out.println("from root bean, field: " + field + ", childBean: " + childBean);
     }

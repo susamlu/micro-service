@@ -33,8 +33,9 @@ public class GenericBeanDefinitionExample2 implements ApplicationContextAware {
                 .addPropertyValue("field", "sample-value");
         context.registerBeanDefinition("rootBean", rootBeanDefinition);
 
-        AutowireCapableBeanFactory beanFactory = context.getAutowireCapableBeanFactory();
-        RootBean rootBean = beanFactory.getBean(RootBean.class);
+        System.out.println("before getBean");
+        RootBean rootBean = applicationContext.getBean(RootBean.class);
+        System.out.println("after getBean");
         rootBean.doSomething();
     }
 

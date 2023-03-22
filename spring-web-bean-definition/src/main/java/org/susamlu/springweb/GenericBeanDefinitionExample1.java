@@ -26,7 +26,9 @@ public class GenericBeanDefinitionExample1 {
                 .addPropertyValue("childBean", childBeanDefinition);
         beanFactory.registerBeanDefinition("rootBean", rootBeanDefinition);
 
+        System.out.println("before getBean");
         RootBean rootBean = beanFactory.getBean(RootBean.class);
+        System.out.println("after getBean");
         rootBean.doSomething();
     }
 
