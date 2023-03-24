@@ -1,12 +1,10 @@
 package org.susamlu.springweb;
 
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.susamlu.springweb.bean.ChildBean;
 import org.susamlu.springweb.bean.RootBean;
@@ -15,14 +13,14 @@ import org.susamlu.springweb.bean.RootBean;
  * @author lxc
  * @date 2023/03/21
  */
-@Configuration
-public class GenericBeanDefinitionExample2 implements ApplicationContextAware {
+@Component
+public class GenericBeanDefinitionExample2 {
 
     @Autowired
     private GenericWebApplicationContext context;
 
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+    @EventListener
+    private void getBeans(ApplicationReadyEvent event) {
         GenericBeanDefinition childBeanDefinition = new GenericBeanDefinition();
         childBeanDefinition.setBeanClass(ChildBean.class);
         context.registerBeanDefinition("childBean", childBeanDefinition);
@@ -34,7 +32,7 @@ public class GenericBeanDefinitionExample2 implements ApplicationContextAware {
         context.registerBeanDefinition("rootBean", rootBeanDefinition);
 
         System.out.println("before getBean");
-        RootBean rootBean = applicationContext.getBean(RootBean.class);
+        RootBean rootBean = event.getApplicationContext().getBean(RootBean.class);
         System.out.println("after getBean");
         rootBean.doSomething();
     }
